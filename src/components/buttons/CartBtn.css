@@ -1,0 +1,22 @@
+/* CartBtn.css */
+
+.cart-button {
+    background-color: blue; /* Set background color to blue */
+    color: white; /* Set text color to white */
+    border: 2px solid white; /* Set white border */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 5px 10px; /* Add padding */
+    font-family: "Times New Roman", Times, serif; /* Set font family */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* High box shadow */
+    display: flex; /* Flex display for icon alignment */
+    align-items: center; /* Center align items */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.cart-button:hover {
+    background-color: darkblue; /* Darker shade of blue on hover */
+}
+
+.cart-icon {
+    margin-right: 8px; /* Spacing between icon and text */
+}

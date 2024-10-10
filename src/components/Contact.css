@@ -1,0 +1,44 @@
+/* Scoped styles for the Contact page */
+.contact-container {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Center and style the heading specifically for the Contact page */
+.contact-heading {
+    color: blue;
+    font-style: italic;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Scoped style for the button on the Contact page */
+.contact-btn {
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+    border: 2px solid white; /* White border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* High box shadow */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: darkblue; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Scoped style for input fields on the Contact page */
+.contact-input {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    border: 2px solid white; /* White border */
+    padding: 10px; /* Padding for inputs */
+    font-family: "Times New Roman", Times, serif; /* Ensure font family is consistent */
+}
+
+/* Input focus style */
+.contact-input:focus {
+    border-color: blue; /* Blue border on focus */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on focus */
+    outline: none; /* Remove default outline */
+}

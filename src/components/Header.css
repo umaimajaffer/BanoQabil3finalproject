@@ -1,0 +1,41 @@
+/* Set font family and background color */
+nav.navbar {
+    font-family: "Times New Roman", Times, serif;
+    background-color: blue; /* Blue background color */
+    border: 3px solid blue; /* Blue border */
+    border-radius: 3px; /* Rounded corners */
+    padding: 2px 5px; /* Reduced padding for a smaller navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* High box shadow */
+    color: white; /* White text color */
+}
+
+/* Set padding and margin for navbar items */
+.nav-item {
+    margin: 0; /* Remove any default margin */
+}
+
+.nav-link {
+    font-weight: bold;
+    color: white; /* White text color for links */
+    transition: color 0.3s ease; /* Add transition for smoothness */
+    font-size: 1.25rem; /* Increased font size for nav links */
+    padding: 0.5rem 1rem; /* Adjust padding to control link height */
+}
+
+.nav-link:hover {
+    color: lightgray; /* Change color on hover for better visibility */
+}
+
+/* Style the title */
+.title {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+/* Style the navbar brand (Apple Mart) */
+.navbar-brand {
+    font-weight: bold;
+    color: white; /* White text color for brand */
+}

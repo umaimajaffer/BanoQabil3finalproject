@@ -1,0 +1,52 @@
+/* Apply font family */
+* {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Styles for the increment and decrement buttons */
+.increment-btn, .decrement-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Style for the proceed button */
+.proceed-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Center the text for empty cart */
+.empty-cart h3 {
+    text-align: center;
+}
+
+/* Center the product price */
+.product-price {
+    text-align: center;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    margin: 10px 0; /* Add some margin for spacing */
+}
+
+/* Style for the cart item image */
+.cart-item-img {
+    width: 180px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Align item details vertically */
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

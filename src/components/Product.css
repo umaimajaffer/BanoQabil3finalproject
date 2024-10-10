@@ -1,0 +1,57 @@
+.card {
+    border: 2px solid white; /* Add a white border to the card */
+    border-radius: 10px; /* Optional: add rounded corners */
+    height: 400px; /* Set a fixed height for the card */
+    width: 85%; /* Set width to 85% of the column */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* High box shadow */
+    margin: 0 auto; /* Center the card */
+}
+
+.card-title, .lead {
+    font-family: "Times New Roman", Times, serif; /* Set font family for card title and price */
+    text-align: center;
+}
+
+.btn-outline-custom {
+    padding: 10px 20px; /* Add padding to the button */
+    font-family: "Times New Roman", Times, serif; /* Set font family for the button */
+    border: 2px solid blue; /* Add a blue border to the button */
+    border-radius: 10px; /* Optional: add rounded corners */
+    background-color: blue; /* Set background color to blue */
+    color: white; /* Set text color to white for better visibility */
+    transition: background-color 0.3s ease; /* Optional: add smooth transition on hover */
+}
+
+.btn-outline-custom:hover {
+    background-color: darkblue; /* Darker shade of blue on hover */
+}
+
+hr {
+    border: none; /* Remove default border */
+    height: 2px; /* Set thickness of the line */
+    background-color: black; /* Set color of the line */
+    width: 90%; /* Set width of the line (adjust as needed) */
+    margin: 10px auto; /* Center the line and set vertical spacing */
+    border-radius: 5px; /* Optional: make the edges rounded */
+}
+
+/* Custom styles for images */
+.card-img-top {
+    height: 200px; /* Set a fixed height for all images */
+    width: 100%; /* Ensure images take full width of the container */
+    object-fit: contain; /* Ensure images fit well within the card */
+    
+    background-color: white; /* Background color to show outline clearly */
+}
+
+/* Section styling */
+.section {
+    color: blue; /* Set section titles color to blue */
+    text-align: center; /* Center align section titles */
+    font-family: "Times New Roman", Times, serif; /* Set font family for section titles */
+    font-style: italic; /* Make section titles italic */
+    margin-top: 40px; /* Add margin for spacing */
+}
+.products-title {
+    color: blue; /* Change text color to blue */
+}

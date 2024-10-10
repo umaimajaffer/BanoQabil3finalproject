@@ -1,0 +1,59 @@
+/* Scoped styles for ProductDetail */
+
+/* General container styles */
+.product-container {
+    font-family: "Times New Roman", Times, serif; /* Use Times New Roman font family */
+}
+
+/* Product image styling */
+.product-image {
+    border: 2px solid white; /* White border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* High box shadow */
+    width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Keep the aspect ratio */
+}
+
+/* Product title styling */
+.product-title {
+    font-size: 2rem; /* Adjust font size */
+    font-family: "Times New Roman", Times, serif; /* Apply Times New Roman */
+    color: black; /* Text color */
+    text-align: center; /* Center align the title */
+}
+
+/* Product description styling */
+.product-description {
+    text-align: justify; /* Justify text */
+    line-height: 1.6; /* Improve readability */
+    font-family: "Times New Roman", Times, serif; /* Apply Times New Roman */
+}
+
+/* Button styling */
+.custom-btn {
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+    border: 1.5px solid white; /* White border */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* High box shadow */
+    transition: background-color 0.3s ease-in-out, transform 0.3s; /* Smooth transitions */
+    font-family: "Times New Roman", Times, serif; /* Apply Times New Roman */
+    font-size: 0.9rem; /* Decrease the button text size */
+    width: 150px; /* Reduce the width of the button */
+    align-self: center; /* Center the button */
+    padding: 10px 20px; /* Adjust padding if necessary */
+    font-size: 1rem;
+    
+}
+
+.custom-btn:hover {
+    background-color: darkblue; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+/* Add custom styles for the price */
+.product-price {
+    text-align: center;
+    font-size: 1.8rem; /* Adjust the font size as per your preference */
+    font-weight: bold;
+}
+

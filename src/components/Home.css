@@ -1,0 +1,195 @@
+/* Set font family and add background image */
+.home-container {
+    font-family: "Times New Roman", Times, serif;
+    position: relative; /* Position relative for overlay */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Background image styles */
+.home-container::before {
+    content: '';
+    position: absolute; /* Position absolute to overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuuHW8vYLCKB1nCPG9zt_XWohluO2yuQieWA&s); /* Add your background image here */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    opacity: 0.3; /* Set opacity to soften the image */
+    z-index: -1; /* Position behind other content */
+}
+
+/* Ensure container contents are visible */
+.content {
+    position: relative; /* Position relative for z-index */
+    z-index: 1; /* Bring content in front of background */
+}
+
+/* Carousel layout */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px; /* Reduce width */
+    margin: 15px auto; /* Center it */ 
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding inside the carousel */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a slight background color to make it stand out */
+}
+
+/* Text styles for carousel */
+.carousel-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+/* Title styles for carousel */
+.carousel-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2.5rem; /* Increased font size */
+    font-style: italic; /* Italic style */
+    color: blue; /* Blue color */
+}
+
+/* Image styles for carousel */
+.carousel-image {
+    flex: 1;
+}
+
+.carousel-img {
+    width: 350px; /* Fixed width for carousel images */
+    height: 350px; /* Fixed height for carousel images */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* High box shadow */
+}
+
+/* Add border to product cards (assuming Product component has a card-like structure) */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #fff; /* Make sure the product card has a white background */
+}
+
+/* Add hover effect for product cards */
+.product-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styling */
+.section-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: blue;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+/* Product section styling */
+.product-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Product slider */
+.product-slider {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hide overflow to maintain layout */
+    gap: 20px;
+}
+
+/* Product image box with hover effect */
+.product-image-box {
+    position: relative;
+    width: 250px; /* Maintain width */
+    height: 250px; /* Set height to create a square */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* High box shadow */
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: #fff; /* Background color to enhance visibility */
+}
+
+/* Hover effect on product boxes */
+.product-image-box:hover {
+    transform: scale(1.05);
+}
+
+/* Image inside the product card */
+.product-img {
+    width: 100%;
+    height: 100%; /* Maintain square shape */
+    border-radius: 15px; /* Rounded corners */
+    object-fit: cover; /* Cover the area nicely */
+}
+
+/* Product details that appear on hover */
+.product-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Transition for hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show product details on hover */
+.product-image-box:hover .product-details {
+    opacity: 1; /* Show on hover */
+}
+
+/* Title styling for product */
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic; /* Italic style */
+    color: blue; /* Blue color for title */
+    margin: 10px 0; /* Add margin */
+}
+
+/* Styles for carousel arrows */
+.carousel-arrows {
+    display: flex;
+    justify-content: space-between; /* Space between arrows */
+    width: 100%; /* Take full width */
+    position: relative; /* Position relative for absolute child elements */
+}
+
+.arrow {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: black; /* Blue color for arrows */
+    font-size: 2rem; /* Font size f,or arrows */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.arrow:disabled {
+    color: grey; /* Grey color when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
+}
+
+.arrow:hover:not(:disabled) {
+    color: darkblue; /* Darker blue on hover */
+}
