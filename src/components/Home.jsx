@@ -16,7 +16,7 @@ const ProductImage = ({ img, title, desc, price }) => {
         </div>
     );
 };
-
+ 
 // Component to display product sections (Smartphones, MacBooks, iPads, Earbuds)
 const ProductSection = ({ title, products }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -94,7 +94,7 @@ const Home = () => {
         }, 2000); // Change image every 2 seconds
 
         return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
+    }, [carouselData.length]);
 
     return (
         <div className="home-container">

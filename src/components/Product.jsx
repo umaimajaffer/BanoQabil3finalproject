@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+// Remove this line if you don't need NavLink
+import { useNavigate } from 'react-router-dom';
 import DATA from '../Data'; // Make sure to import your DATA
 import './Product.css'; // Import your CSS file
 
